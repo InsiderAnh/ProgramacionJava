@@ -1,4 +1,4 @@
-package io.github.insideranh;
+package io.github.insideranh.clase7;
 
 public class Ciudad {
 
