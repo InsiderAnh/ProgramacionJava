@@ -1,5 +1,7 @@
 package io.github.insideranh;
 
+import io.github.insideranh.clase7.Ciudad;
+
 public class Clase7 {
 
     public static void main(String[] args) {
