@@ -1,6 +1,6 @@
 package io.github.insideranh.clase8;
 
-public class Perro extends Animal {
+public class Perro extends Animal implements Fiel {
 
     @Override
     public void sonido() {
@@ -24,6 +24,16 @@ public class Perro extends Animal {
     @Override
     public boolean esDomestico() {
         return true;
+    }
+
+    @Override
+    public void fiel() {
+        System.out.println("El perro fiel");
+    }
+
+    @Override
+    public String getNombre() {
+        return "";
     }
 
 }

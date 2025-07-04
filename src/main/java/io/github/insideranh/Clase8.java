@@ -1,8 +1,8 @@
 package io.github.insideranh;
 
-import io.github.insideranh.clase8.Animal;
-import io.github.insideranh.clase8.Gato;
-import io.github.insideranh.clase8.Perro;
+import io.github.insideranh.clase8.*;
+
+import java.util.ArrayList;
 
 public class Clase8 {
 
@@ -17,19 +17,22 @@ public class Clase8 {
 
         // esDomestico
 
-        Perro perro = new Perro();
-        perro.sonido();
-        perro.comer();
-        perro.beber();
+        ArrayList<Animal> animales = new ArrayList<>();
+        animales.add(new Gato());
+        animales.add(new Perro());
+        animales.add(new Loro());
 
-        perro.ladrar();
-
-        Animal gato = new Gato();
-        gato.sonido();
-        gato.comer();
-        gato.beber();
-
-
+        for (Animal animal : animales) {
+            if (animal instanceof Gato) {
+                System.out.println("Es un Gato");
+            } else if (animal instanceof Perro) {
+                System.out.println("Es un Perro");
+            } else if (animal instanceof Volador) {
+                Volador volador = (Volador) animal;
+                volador.volar();
+                System.out.println("Es un Volador");
+            }
+        }
     }
 
 }
