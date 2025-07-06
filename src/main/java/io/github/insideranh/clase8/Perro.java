@@ -31,9 +31,4 @@ public class Perro extends Animal implements Fiel {
         System.out.println("El perro fiel");
     }
 
-    @Override
-    public String getNombre() {
-        return "";
-    }
-
 }
